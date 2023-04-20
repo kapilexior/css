@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+       <meta charset="UTF-8">
+        <style>
+         </style>
+     </head>
+     <body>
+ <h3>sposoby podlączania stylu do strony</h3>
+ <ol>
+ <li>Zewnętrzny arkusz stylów</li>
+     <textarea rows="3" cols="80">
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css" />
+</head>
+</textarea>
+    <li>Styl Lokalny inaczej: (styl wpisany, liniowy, linijkowy, w linii)czyli dopisanie arkusza do wybranego bloku treści strony)</li>
+     <textarea rows="2" cols="80"> 
+<selektor `style="cecha1: wartość1; cecha2: wartość2;">...</selektor>
+       </textarea>
+     <li>Wewętrzny </u> arkusz stylów</li>
+   <textarea rows="6" cols="80">
+<head>
+<style type="text/css">
+      selektor1 { cecha: wartość; cecha2: wartość2; }
+      selektor2 { cecha: wartość; cecha2: wartość2; }
+</style>
+</head>
+</textarea>
+<li>Alternatywny </u> arkusz stylów</li>
+<textarea rows="7" cols="80">
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css" title="Nazwa domyślna" />
+<link rel="Alternate stylesheet"type="text/css" href="style1.css" title="Nazwa 1" />
+<link rel="Alternate stylesheet" type="text/css" href="style2.css" title="Nazwa 2" />
+</head>
+</textarea>
+<li>Import </u> arkusza stylów</li>
+<textarea rows="3" cols="80">
+<style type="text/css">
+@import url(adres_zewnetrzny_stylow);
+</style>
+</textarea>
+</ol>
+<!--Kacper Polinski 20-04-2023-->
+</body>
+</html>
